@@ -79,9 +79,11 @@ let prevScrollPos = window.scrollY;
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
   if (prevScrollPos > currentScrollPos) {
-    headerBar.style.top = "0"
+    headerBar.style.top = "0";
+    menuButton.style.top = "16vh";
   } else if (prevScrollPos > 40 && prevScrollPos < currentScrollPos) {
-    headerBar.style.top = "-16vh"
+    headerBar.style.top = "-16vh";
+    menuButton.style.top = "2vh"
   }
   prevScrollPos = currentScrollPos;
 }
