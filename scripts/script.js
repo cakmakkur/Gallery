@@ -81,7 +81,7 @@ window.onscroll = function () {
   if (prevScrollPos > currentScrollPos) {
     headerBar.style.top = "0"
   } else if (prevScrollPos > 40 && prevScrollPos < currentScrollPos) {
-    headerBar.style.top = "-20vh"
+    headerBar.style.top = "-16vh"
   }
   prevScrollPos = currentScrollPos;
 }
