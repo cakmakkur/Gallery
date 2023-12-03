@@ -1,0 +1,267 @@
+.main {
+  position: absolute;
+  width: 100vw;
+  transition: 0.4s;
+}
+
+.main.open {
+  transform: translateX(100vw);
+}
+
+.shopArea {
+  position: relative;
+  transition: 0.4s;
+  z-index: 90;
+}
+
+.productArea {
+  position: relative;
+  top: 10vh;
+  width: 100%;
+  z-index: 90px;
+}
+
+.productGridContainer {
+  display: grid;
+  padding: 13vh 5vw 1vh 5vw;
+  -moz-column-gap: 5vh;
+       column-gap: 5vh;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 980px) {
+  .productGridContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .productGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 390px) {
+  .productGridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.productContainer {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  min-width: 150px;
+  margin-bottom: 15vh;
+  aspect-ratio: 2/1;
+  border-radius: 5px;
+  box-shadow: 0px 3px 15px 3px rgba(245, 231, 222, 0.362);
+  transition: 0.2s;
+  border: 0px solid rgba(153, 32, 32, 0.562);
+}
+.productContainer:hover {
+  position: relative;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.productContainer .productImage {
+  max-width: 100%;
+}
+.productContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.productContainer .productInfo {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  background-image: url("/assets/canvas-texture.jpg");
+  background-size: contain;
+  padding: 5px 5px 5px 10px;
+  box-shadow: inset 1px 1px 10px rgb(80, 36, 4);
+  border-top: 2px solid #a9480b;
+}
+.productContainer .productInfo .q-mark {
+  width: 7%;
+}
+.productContainer .productInfo .q-mark:hover {
+  color: rgb(241, 118, 41);
+}
+
+.sidebar {
+  background-color: rgb(40, 33, 33);
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  transition: 0.4s ease-in-out;
+  transform: translateX(-100vw);
+  position: fixed;
+}
+
+.menuItems {
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuItem {
+  transition: 0.4s;
+}
+.menuItem:nth-child(odd) {
+  transform: translateX(-100vw);
+}
+.menuItem:nth-child(even) {
+  transform: translateX(200vw);
+}
+.menuItem.open {
+  transform: translateX(0);
+  transition-delay: 0.15s;
+}
+
+.sidebar a {
+  font-size: 2.5rem;
+  white-space: nowrap;
+  color: darkgray;
+  left: -50vw;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.sidebar a:hover {
+  color: rgb(241, 118, 41);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.menuButton {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 18vh;
+  left: 14px;
+  z-index: 100;
+}
+.menuButton:hover {
+  cursor: pointer;
+}
+.menuButton .burgerItem {
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  top: 17px;
+  transition: 0.4s ease-in-out;
+}
+.menuButton .burgerItem::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  top: -10px;
+  transition: 0.4s ease-in-out;
+}
+.menuButton .burgerItem::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 3px;
+  top: 10px;
+  transition: 0.4s ease-in-out;
+}
+.menuButton .burgerItem.outsideHover {
+  background-color: rgb(241, 118, 41);
+}
+.menuButton .burgerItem.outsideHover::before, .menuButton .burgerItem.outsideHover::after {
+  background-color: rgb(241, 118, 41);
+}
+.menuButton .burgerItem.open {
+  transform: rotate(720deg);
+  background: transparent;
+  transition: 0.4s ease-in-out;
+}
+.menuButton .burgerItem.open::after {
+  transform: rotate(-43deg) translate(4px, -8px);
+  transition: 0.4s ease-in-out;
+}
+.menuButton .burgerItem.open::before {
+  transform: rotate(43deg) translate(6px, 9px);
+  transition: 0.4s ease-in-out;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 17vh;
+  z-index: 100;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.titleContainer {
+  background: linear-gradient(347deg, rgb(38, 51, 50) 0%, rgb(118, 153, 158) 100%);
+  box-shadow: inset 0px 0px 50px 5px black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-bottom: 2px solid rgb(241, 118, 41);
+}
+
+.brand {
+  color: darkgray;
+  position: relative;
+  margin: 1vh;
+}
+
+.fa-moon {
+  position: absolute;
+  top: -55%;
+  animation-name: moonAnimation;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  transform: rotate(-10deg);
+}
+
+@keyframes moonAnimation {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 53%;
+  }
+  from {
+    rotate: -110deg;
+  }
+  to {
+    rotate: -10deg;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: top;
+  z-index: 200;
+}
+
+.modal-content {
+  max-width: 100%;
+  max-height: 100vh;
+  z-index: 200;
+}
