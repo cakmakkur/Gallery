@@ -100,6 +100,7 @@ itemImages.forEach((image) => {
       image.addEventListener('click', () => {
         modal.style.display = "flex";
         headerBar.style.display = 'none';
+        menuButton.style.display = 'none';
       })
     }
   })
@@ -110,6 +111,7 @@ window.onclick = function(event) {
     if (event.target === modal) {
       modal.style.display = "none";
       headerBar.style.display = 'flex';
+      menuButton.style.display = 'block'
     }
   }) 
 };
@@ -119,6 +121,7 @@ window.onkeydown = function(event) {
     if (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27) {
       modal.style.display = "none";
       headerBar.style.display = 'flex';
+      menuButton.style.display = 'block'
     }
   }) 
 }
