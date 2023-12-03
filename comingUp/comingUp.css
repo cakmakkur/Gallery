@@ -2,7 +2,6 @@ body {
   background: linear-gradient(347deg, rgba(38, 51, 50, 0.75) 0%, rgba(118, 153, 158, 0.716) 100%);
   overflow: hidden;
   font-family: "Roboto Mono", monospace;
-
 }
 
 .main-wrapper {
@@ -70,8 +69,31 @@ body {
   padding: 10px 15px;
   text-align: center;
 }
+.link:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.247);
+}
 
 .gal {
   font-size: 20px;
   font-weight: 500;
+}
+
+.language {
+  position: fixed;
+  top: 5vh;
+  right: 5vh;
+}
+
+.languageButton {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(241, 118, 41);
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+.languageButton:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.247);
 }
