@@ -260,6 +260,36 @@ header {
   align-items: center;
   z-index: 200;
 }
+.modal .xButtonWrapper {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 250;
+  transition: 0.4s;
+}
+.modal .xButtonWrapper:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.modal .xButtonWrapper .xButton {
+  position: absolute;
+  background-color: rgb(241, 118, 41);
+  width: 30px;
+  height: 3px;
+  top: 12px;
+  transform: rotate(45deg);
+  z-index: 250;
+}
+.modal .xButtonWrapper .xButton::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(241, 118, 41);
+  width: 30px;
+  height: 3px;
+  transform: rotate(90deg);
+}
 
 .modal-content {
   max-width: 100%;

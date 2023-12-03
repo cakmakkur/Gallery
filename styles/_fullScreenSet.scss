@@ -9,6 +9,37 @@
   justify-content: center;
   align-items: center;
   z-index: 200;
+
+  .xButtonWrapper {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 2vh;
+    right: 2vh;
+    z-index: 250;
+    transition: 0.4s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+    .xButton {
+      position: absolute;
+      background-color: $hover-color;
+      width: 30px;
+      height: 3px;
+      top: 12px;
+      transform: rotate(45deg);
+      z-index: 250;
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $hover-color;
+        width: 30px;
+        height: 3px;
+        transform: rotate(90deg);
+      }
+    }
+  }
 }
 
 .modal-content {

@@ -63,6 +63,9 @@ items.forEach((item) => {
       </div>
     </div>
     <div class="modal" data-id="${item.id}">
+        <div class="xButtonWrapper">
+        <span class="xButton"></span>
+        </div>
         <img src="paintings /${item.image}" class="modal-content">
     </div>
   `
@@ -93,9 +96,10 @@ window.onscroll = function () {
 const itemImages = document.querySelectorAll('.itemImage');
 const modals = document.querySelectorAll('.modal');
 
+let currentFullImage;
+
 itemImages.forEach((image) => {
   const imageId = image.dataset.imageId;
-
   modals.forEach((modal) => {
     const modalId = modal.dataset.id;
     if (modalId === imageId) {
@@ -103,6 +107,7 @@ itemImages.forEach((image) => {
         modal.style.display = "flex";
         headerBar.style.display = 'none';
         menuButton.style.display = 'none';
+        currentFullImage = image;
       })
     }
   })
@@ -128,3 +133,17 @@ window.onkeydown = function(event) {
   }) 
 }
 
+// X BUTTON
+
+const xButtons = document.querySelectorAll('.xButtonWrapper');
+xButtons.forEach((button) => {
+  button.addEventListener('click', closeFullScr);
+})
+function closeFullScr () {
+  modals.forEach((modal) => {
+      modal.style.display = "none";
+      headerBar.style.display = 'flex';
+      menuButton.style.display = 'block'
+    }
+  ) 
+}
