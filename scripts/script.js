@@ -22,6 +22,7 @@ function toggleSidemenu () {
     menuItems.forEach((item) => {
       item.classList.add('open');
     })
+    document.body.style.overflow = "hidden";
     isOpen = true;
   } else {
     sideBar.classList.remove('open');
@@ -30,6 +31,7 @@ function toggleSidemenu () {
     menuItems.forEach((item) => {
       item.classList.remove('open');
     })
+    document.body.style.overflow = "auto";
     isOpen =false;
   }
 };
