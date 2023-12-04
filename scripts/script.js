@@ -66,7 +66,7 @@ items.forEach((item) => {
         <div class="xButtonWrapper">
         <span class="xButton"></span>
         </div>
-        <img src="paintings /${item.image}" class="modal-content">
+        <img src="paintings /${item.image}" class="modal-content loading="lazy"">
     </div>
   `
 })
