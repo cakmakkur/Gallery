@@ -71,7 +71,8 @@
 }
 .productContainer .productInfo {
   display: flex;
-  align-items: end;
+  position: relative;
+  flex-direction: column;
   justify-content: space-between;
   background-image: url("../assets/canvas-texture.jpeg");
   background-size: contain;
@@ -79,7 +80,17 @@
   box-shadow: inset 1px 1px 10px rgb(80, 36, 4);
   border-top: 2px solid #a9480b;
 }
+.productContainer .productInfo .nameTag {
+  font-weight: 500;
+}
+.productContainer .productInfo .sizeTag {
+  color: gray;
+  font-size: 0.9rem;
+}
 .productContainer .productInfo .q-mark {
+  position: absolute;
+  right: 3px;
+  bottom: 2px;
   width: 7%;
 }
 .productContainer .productInfo .q-mark:hover {

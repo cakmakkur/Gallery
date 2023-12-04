@@ -66,14 +66,25 @@
   }
   .productInfo {
     display: flex;
-    align-items: end;
+    position: relative;
+    flex-direction: column;
     justify-content: space-between;
     background-image: url('../assets/canvas-texture.jpeg');
     background-size: contain;
     padding: 5px 5px 5px 10px;
     box-shadow: inset 1px 1px 10px rgb(80, 36, 4);
     border-top: 2px solid darken($hover-color, 20%);
+    .nameTag {
+      font-weight: 500;
+    }
+    .sizeTag {
+      color: gray;
+      font-size: 0.9rem;
+    }
     .q-mark {
+      position: absolute;
+      right: 3px;
+      bottom: 2px;
       width: 7%;
       &:hover {
         color: $hover-color;
