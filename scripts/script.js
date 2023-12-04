@@ -44,7 +44,7 @@ items.forEach((item) => {
   productsHTML += `
     <div class="productContainer product${item.id}">
       <div class="productImage">
-        <img class="itemImage" data-image-id="${item.id}" src="paintings /${item.image}" alt="" />
+        <img class="itemImage" data-image-id="${item.id}" src="paintings /${item.image}" alt="" loading="lazy"/>
       </div>
       <div class="productInfo">
         ${item.info}
