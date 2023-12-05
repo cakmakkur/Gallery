@@ -61,7 +61,7 @@ items.forEach((item) => {
         srcset="paintings/painting-${item.id}-sm.jpeg 800w,
                 paintings/painting-${item.id}.jpeg 2000w"
         alt="Oil Painting" 
-        loading="lazy"/>
+        loading="${Number(item.id) < 6 ? "eager" : "lazy"}"/>
       </div>
       <div class="productInfo">
         ${item.info}
