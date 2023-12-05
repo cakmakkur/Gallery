@@ -57,7 +57,7 @@ export const items = [
   },
   {
     id: '15',
-    info: '<span class="nameTag">The Jazz </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">The Jazz </span>Pastel on paper <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '16',
