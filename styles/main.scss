@@ -6,9 +6,6 @@
 @import './fullScreenSet';
 
 body {
-  background-image: url("./assets/canvas-texture-2.jpeg");
-  background-size: contain;
-  background-repeat: repeat;
   @include S {
     background-color: rgb(31, 31, 31);
   }

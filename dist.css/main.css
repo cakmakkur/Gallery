@@ -308,11 +308,6 @@ header {
   z-index: 200;
 }
 
-body {
-  background-image: url("./assets/canvas-texture-2.jpeg");
-  background-size: contain;
-  background-repeat: repeat;
-}
 @media (max-width: 450px) {
   body {
     background-color: rgb(31, 31, 31);
