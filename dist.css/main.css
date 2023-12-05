@@ -419,14 +419,6 @@ li {
   list-style-type: none;
 }
 
-body {
-  min-height: 100vh;
-  min-width: 170px;
-  position: relative;
-  background-image: url("../assets/canvas-texture-2.jpeg");
-  background-size: contain;
-  background-repeat: repeat;
-}
 @media (max-width: 640px) {
   body {
     background-image: none;
