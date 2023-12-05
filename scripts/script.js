@@ -22,7 +22,6 @@ function toggleSidemenu () {
     menuItems.forEach((item) => {
       item.classList.add('open');
     })
-    document.body.style.overflow = "hidden";
     isOpen = true;
   } else {
     sideBar.classList.remove('open');
@@ -31,7 +30,6 @@ function toggleSidemenu () {
     menuItems.forEach((item) => {
       item.classList.remove('open');
     })
-    document.body.style.overflow = "auto";
     isOpen =false;
   }
 };
@@ -40,13 +38,15 @@ function hoverColor () {
   burgerItem.classList.toggle('outsideHover');
 };
 
+
+
 let productsHTML = '';
 
 items.forEach((item) => {
   productsHTML += `
     <div class="productContainer product${item.id}">
       <div class="productImage">
-        <img class="itemImage" data-image-id="${item.id}" src="paintings /${item.image}" alt="" loading="lazy"/>
+        <img class="itemImage" data-image-id="${item.id}" src="paintings /${item.image}" alt="Oil Painting" loading="lazy"/>
       </div>
       <div class="productInfo">
         ${item.info}
@@ -68,7 +68,7 @@ items.forEach((item) => {
         <div class="xButtonWrapper">
         <span class="xButton"></span>
         </div>
-        <img src="paintings /${item.image}" class="modal-content loading="lazy"">
+        <img src="paintings /${item.image}" class="modal-content" loading="lazy" alt="Oil painting">
     </div>
   `
 })
