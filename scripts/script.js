@@ -75,7 +75,9 @@ items.forEach((item) => {
         <div class="xButtonWrapper">
         <span class="xButton"></span>
         </div>
-        <img src="paintings/painting-${item.id}.jpeg" class="modal-content" loading="lazy" alt="Oil painting">
+        <img src="paintings/painting-${item.id}.jpeg"
+        srcset="paintings/painting-${item.id}-sm.jpeg 800w,
+                paintings/painting-${item.id}.jpeg 2000w" class="modal-content" loading="lazy" alt="Oil painting">
     </div>
   `
 })
