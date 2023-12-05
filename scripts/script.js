@@ -1,10 +1,10 @@
 import { items } from "../data/items.js";
 
-const loadingScreen = document.querySelector('.loadingScreen');
+// const loadingScreen = document.querySelector('.loadingScreen');
 
-setTimeout(function () {
-  loadingScreen.style.display = 'none'
-}, 3300);
+// setTimeout(function () {
+//   loadingScreen.style.display = 'none'
+// }, 3300);
 
 let isOpen = false;
 
