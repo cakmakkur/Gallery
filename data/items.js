@@ -1,7 +1,7 @@
 export const items = [
   {
     id: '1',
-    info: '<span class="nameTag">Dissolved</span>Oil and acryl on canvas<span class="sizeTag">60x80</span>'
+    info: '<span class="nameTag">Lunar Echo</span>Oil and acryl on canvas<span class="sizeTag">60x80</span>'
   },
   {
     id: '2',
@@ -9,7 +9,7 @@ export const items = [
   },
   {
     id: '3',
-    info: '<span class="nameTag">Encrypted</span>oil on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">Drums and bones</span>oil on canvas <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '4',
@@ -17,15 +17,15 @@ export const items = [
   },
   {
     id: '5',
-    info: '<span class="nameTag">Reflexion </span>Ink on paper <br /><span class="sizeTag">21x29</span>'
+    info: '<span class="nameTag">Impressions #5 </span>Ink on paper <br /><span class="sizeTag">21x29</span>'
   },
   {
     id: '6',
-    info: '<span class="nameTag">Bloom </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">Early Blossom </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '7',
-    info: '<span class="nameTag">The earth slides </span>Oil on canvas <br /><span class="sizeTag">40x50</span>'
+    info: '<span class="nameTag">Moory Garden </span>Oil on canvas <br /><span class="sizeTag">40x50</span>'
   },
   {
     id: '8',
@@ -33,15 +33,15 @@ export const items = [
   },
   {
     id: '9',
-    info: '<span class="nameTag">Besuch </span>Oil on canvas <br /><span class="sizeTag">70x50</span>'
+    info: '<span class="nameTag">Impressions #2 </span>Oil on canvas <br /><span class="sizeTag">70x50</span>'
   },
   {
     id: '10',
-    info: '<span class="nameTag">Distant </span>Acryl on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">Entdeckung! </span>Acryl on canvas <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '11',
-    info: '<span class="nameTag">Somewhere sometime </span>Oil on canvas <br /><span class="sizeTag">60x40</span>'
+    info: '<span class="nameTag">Heimweg </span>Oil on canvas <br /><span class="sizeTag">60x40</span>'
   },
   {
     id: '12',
@@ -49,19 +49,19 @@ export const items = [
   },
   {
     id: '13',
-    info: '<span class="nameTag">Erkläre! </span>Oil on canvas <br /><span class="sizeTag">40x80</span>'
+    info: '<span class="nameTag">Erkenntnis </span>Oil on canvas <br /><span class="sizeTag">40x80</span>'
   },
   {
     id: '14',
-    info: '<span class="nameTag">Ohrwurm </span>Oil on canvas <br /><span class="sizeTag"><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">The Blues </span>Oil on canvas <br /><span class="sizeTag"><span class="sizeTag">50x70</span>'
   },
   {
     id: '15',
-    info: '<span class="nameTag">Blues </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">The Jazz </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '16',
-    info: '<span class="nameTag">Turning back </span>Oil on canvas <br /><span class="sizeTag">60x40</span>'
+    info: '<span class="nameTag">Almost back </span>Oil on canvas <br /><span class="sizeTag">60x40</span>'
   },
   {
     id: '17',
@@ -73,15 +73,15 @@ export const items = [
   },
   {
     id: '19',
-    info: '<span class="nameTag">There will be it </span>Ink on paper <br /><span class="sizeTag">21x29</span>'
+    info: '<span class="nameTag">(no name) </span>Ink on paper <br /><span class="sizeTag">21x29</span>'
   },
   {
     id: '20',
-    info: '<span class="nameTag">Raum </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">(no name) </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '21',
-    info: '<span class="nameTag">Vom Strand 2 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
+    info: '<span class="nameTag">Vom Strand #2 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
   },
   {
     id: '22',
@@ -89,23 +89,23 @@ export const items = [
   },
   {
     id: '23',
-    info: '<span class="nameTag">Vom Strand 3 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
+    info: '<span class="nameTag">Vom Strand #3 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
   },
   {
     id: '24',
-    info: '<span class="nameTag">Vom Strand 1 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
+    info: '<span class="nameTag">Vom Strand #1 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
   },
   {
     id: '25',
-    info: '<span class="nameTag">Vom Strand 4 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
+    info: '<span class="nameTag">Vom Strand #5 </span>Oil on canvas <br /><span class="sizeTag">30x40</span>'
   },
   {
     id: '26',
-    info: '<span class="nameTag">Peace </span>Oil on canvas <br /><span class="sizeTag">80x30</span>'
+    info: '<span class="nameTag">(no name) </span>Oil on canvas <br /><span class="sizeTag">80x30</span>'
   },
   {
     id: '27',
-    info: '<span class="nameTag">Dissolved 2 </span>Acryl on canvas <br /><span class="sizeTag">40x20</span>'
+    info: '<span class="nameTag">Dissolved #2 </span>Acryl on canvas <br /><span class="sizeTag">40x20</span>'
   },
   {
     id: '28',
@@ -121,7 +121,7 @@ export const items = [
   },
   {
     id: '31',
-    info: '<span class="nameTag">Will you tell me? </span>Ink on paper <br /><span class="sizeTag">25x35</span>'
+    info: '<span class="nameTag">(no name) </span>Ink on paper <br /><span class="sizeTag">25x35</span>'
   },
   {
     id: '32',
@@ -129,23 +129,23 @@ export const items = [
   },
   {
     id: '33',
-    info: '<span class="nameTag">Battle breeze </span>Digital'
+    info: '<span class="nameTag">Battle Breeze!! </span>Digital'
   },
   {
     id: '34',
-    info: '<span class="nameTag">Away now 2 </span>Acryl on canvas <br /><span class="sizeTag">40x80</span>'
+    info: '<span class="nameTag">Away now #2 </span>Acryl on canvas <br /><span class="sizeTag">40x80</span>'
   },
   {
     id: '35',
-    info: '<span class="nameTag">Not that old </span>Clay'
+    info: '<span class="nameTag">(no name) </span>Clay'
   },
   {
     id: '36',
-    info: '<span class="nameTag">Stadt auf Säure </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
+    info: '<span class="nameTag">Die Stadt und die Säure </span>Oil on canvas <br /><span class="sizeTag">50x70</span>'
   },
   {
     id: '37',
-    info: '<span class="nameTag">Zeitklar </span>Oil on cardboard <br /><span class="sizeTag">40x30</span>'
+    info: '<span class="nameTag">Zeitgeist </span>Oil on cardboard <br /><span class="sizeTag">40x30</span>'
   },
   {
     id: '38',
@@ -153,14 +153,14 @@ export const items = [
   },
   {
     id: '39',
-    info: '<span class="nameTag">Der Schatten </span>Ink and watercolor on paper <br /><span class="sizeTag">30x20</span>'
+    info: '<span class="nameTag">(no name) </span>Ink and watercolor on paper <br /><span class="sizeTag">30x20</span>'
   },
   {
     id: '40',
-    info: '<span class="nameTag">Der Gedanke 2 </span>Digital'
+    info: '<span class="nameTag">Der Gedanke und sein Klang </span>Digital'
   },
   {
     id: '41',
-    info: '<span class="nameTag">Ausflug </span>Oil on canvas <br /><span class="sizeTag">50x40</span>'
+    info: '<span class="nameTag">Impressions #4  </span>Oil on canvas <br /><span class="sizeTag">50x40</span>'
   },
 ]

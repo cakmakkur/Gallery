@@ -9,7 +9,7 @@ function changeLanguage () {
   if (currentLanguage === 'en') {
     title.innerHTML = `<h1>Kommt bald</h1>`;
     info.innerHTML = `Diese Seite befindet sich derzeit im Aufbau. <br />
-    Echt keine Ahnung wann sie fertig sein wird aber wenn es soweit ist wird es legendär! <br />Also komm später wieder...`
+    Echt keine Ahnung wann sie fertig sein wird aber wenn es soweit ist wird es bestimmt legendär! <br />Also komm später wieder...`
     link.innerHTML = `Zurück zur <span class="gal">Gallerie</span>`;
     langButton.innerHTML = 'EN';
     currentLanguage = 'de';
