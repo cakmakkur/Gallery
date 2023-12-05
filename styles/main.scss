@@ -5,8 +5,22 @@
 @import './responsive';
 @import './fullScreenSet';
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+li {
+  list-style-type: none;
+}
 body {
+  @include M {
+    background-image: none;
+    background-color: rgb(31, 31, 31);
+  }
   @include S {
+    background-image: none;
     background-color: rgb(31, 31, 31);
   }
 }

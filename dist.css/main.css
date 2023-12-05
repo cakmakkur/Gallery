@@ -308,8 +308,26 @@ header {
   z-index: 200;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-image: none;
+    background-color: rgb(31, 31, 31);
+  }
+}
 @media (max-width: 450px) {
   body {
+    background-image: none;
     background-color: rgb(31, 31, 31);
   }
 }
