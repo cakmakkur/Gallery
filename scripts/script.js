@@ -16,6 +16,7 @@ menuButton.addEventListener('click', toggleSidemenu);
 
 function toggleSidemenu () {
   if (!isOpen) {
+    document.body.classList.add('no-scroll');
     sideBar.classList.add('open');
     main.classList.add('open');
     burgerItem.classList.add('open');
@@ -24,6 +25,7 @@ function toggleSidemenu () {
     })
     isOpen = true;
   } else {
+    document.body.classList.remove('no-scroll');
     sideBar.classList.remove('open');
     main.classList.remove('open');
     burgerItem.classList.remove('open');
