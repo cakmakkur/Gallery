@@ -308,6 +308,21 @@ header {
   z-index: 200;
 }
 
+.loadingScreen {
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadingScreen-text {
+  color: white;
+  font-size: 3rem;
+  z-index: 1000;
+}
+
 * {
   margin: 0px;
   padding: 0px;

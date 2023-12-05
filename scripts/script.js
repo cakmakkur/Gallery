@@ -1,5 +1,10 @@
 import { items } from "../data/items.js";
 
+const loadingScreen = document.querySelector('.loadingScreen');
+document.addEventListener('DOMContentLoaded', function () {
+  loadingScreen.style.display = 'none'
+})
+
 let isOpen = false;
 
 const sideBar = document.querySelector('.sidebar');
