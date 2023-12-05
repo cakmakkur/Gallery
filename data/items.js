@@ -1,7 +1,7 @@
 export const items = [
   {
     id: '1',
-    image: 'painting-1.jpeg',
+    image: 'paintings/painting-1.jpeg',
     info: '<span class="nameTag">Dissolved</span>Oil and acryl on canvas<span class="sizeTag">60x80</span>'
   },
   {

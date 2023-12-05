@@ -46,7 +46,14 @@ items.forEach((item) => {
   productsHTML += `
     <div class="productContainer product${item.id}">
       <div class="productImage">
-        <img class="itemImage" data-image-id="${item.id}" src="paintings /${item.image}" alt="Oil Painting" loading="lazy"/>
+        <img 
+        class="itemImage" 
+        data-image-id="${item.id}" 
+        src="paintings/painting-${item.id}-sm.jpeg"
+        srcset="paintings/painting-${item.id}-sm.jpeg 800w,
+                paintings/painting-${item.id}.jpeg 2000w"
+        alt="Oil Painting" 
+        loading="lazy"/>
       </div>
       <div class="productInfo">
         ${item.info}
@@ -68,7 +75,7 @@ items.forEach((item) => {
         <div class="xButtonWrapper">
         <span class="xButton"></span>
         </div>
-        <img src="paintings /${item.image}" class="modal-content" loading="lazy" alt="Oil painting">
+        <img src="paintings/painting-${item.id}.jpeg" class="modal-content" loading="lazy" alt="Oil painting">
     </div>
   `
 })
