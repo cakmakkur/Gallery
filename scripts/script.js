@@ -1,9 +1,13 @@
 import { items } from "../data/items.js";
 
 const loadingScreen = document.querySelector('.loadingScreen');
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
+//   loadingScreen.style.display = 'none'
+// })
+
+setTimeout(function () {
   loadingScreen.style.display = 'none'
-})
+}, 3300);
 
 let isOpen = false;
 
