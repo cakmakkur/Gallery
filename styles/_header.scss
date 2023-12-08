@@ -101,3 +101,25 @@ header {
     }
   }
 }
+
+.language {
+  position: fixed;
+  top: 2vh;
+  right: 2vh; 
+}
+.languageButton {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(241, 118, 41);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  opacity: 0.2;
+  transition: 0.4s;
+
+}
+.languageButton:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.247);
+  opacity: 1;
+}

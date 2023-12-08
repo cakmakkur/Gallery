@@ -39,7 +39,6 @@
   font-size: 2.5rem;
   white-space: nowrap;
   color: $secondary-color;
-  left: -50vw;
   text-decoration: none;
   text-align: center;
   transition: 0.4s;
@@ -122,4 +121,25 @@
       }
     }
   }
+}
+
+.sidebarLanguage {
+  position: fixed;
+  top: 1vh;
+  right: 1vh;
+}
+.sidebarLanguageButton {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(241, 118, 41);
+  border: none;
+  border-radius: 15px;
+  color: white;
+  opacity: 0.2;
+  transition: 0.4s;
+}
+.sidebarLanguageButton:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.247);
+  opacity: 1;
 }

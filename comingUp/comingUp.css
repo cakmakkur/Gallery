@@ -91,6 +91,7 @@ body {
   border: none;
   border-radius: 15px;
   color: white;
+  transition: 0.4s;
 }
 
 .languageButton:hover {
