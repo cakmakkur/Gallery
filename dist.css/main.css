@@ -34,7 +34,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   .productGridContainer {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -139,7 +139,6 @@
   text-align: center;
   transition: 0.4s;
 }
-
 .sidebar a:hover {
   color: rgb(241, 118, 41);
 }
@@ -149,6 +148,7 @@
 }
 
 .menuButton {
+  display: none;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -159,6 +159,16 @@
 }
 .menuButton:hover {
   cursor: pointer;
+}
+@media (max-width: 450px) {
+  .menuButton {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .menuButton {
+    display: block;
+  }
 }
 .menuButton .burgerItem {
   position: absolute;
@@ -207,6 +217,8 @@
 }
 
 header {
+  background: linear-gradient(347deg, rgb(38, 51, 50) 0%, rgb(118, 153, 158) 100%);
+  box-shadow: inset 0px 0px 50px 5px black;
   position: fixed;
   top: 0;
   display: flex;
@@ -218,25 +230,32 @@ header {
   transition: 0.4s;
 }
 
-.titleContainer {
-  background: linear-gradient(347deg, rgb(38, 51, 50) 0%, rgb(118, 153, 158) 100%);
-  box-shadow: inset 0px 0px 50px 5px black;
+.mobileHeader {
+  display: none;
   width: 100%;
-  display: flex;
+  height: 15vh;
   justify-content: center;
   align-items: end;
   border-bottom: 2px solid rgb(241, 118, 41);
 }
-
-.brand {
-  color: darkgray;
+@media (max-width: 700px) {
+  .mobileHeader {
+    display: flex;
+  }
+}
+.mobileHeader .mobileLogo {
   position: relative;
-  margin: 1vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.mobileHeader .mobileLogo .mobileBrand {
+  position: relative;
+  max-height: 10vh;
 }
 
 .fa-moon {
   position: absolute;
-  top: -55%;
+  top: 1.5vh;
   animation-name: moonAnimation;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -247,10 +266,10 @@ header {
 
 @keyframes moonAnimation {
   from {
-    left: 30%;
+    left: 10%;
   }
   to {
-    left: 53%;
+    left: 33%;
   }
   from {
     rotate: -110deg;
@@ -259,25 +278,57 @@ header {
     rotate: -10deg;
   }
 }
-.pageLogo {
-  position: fixed;
-  top: 0;
-  left: 1%;
+.largeHeader {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  padding-left: 1vw;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 2px solid rgb(241, 118, 41);
+}
+@media (max-width: 450px) {
+  .largeHeader {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .largeHeader {
+    display: none;
+  }
+}
+.largeHeader .largeScreenLogo {
   width: 15vh;
   height: 15vh;
   -o-object-fit: contain;
      object-fit: contain;
   transition: 0.4s;
 }
-@media (max-width: 450px) {
-  .pageLogo {
-    display: none;
-  }
+.largeHeader .menuBarItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-bottom: 1vh;
 }
-@media (max-width: 640px) {
-  .pageLogo {
-    display: none;
-  }
+.largeHeader .menuBarItems .menuBarItem a {
+  font-weight: 300;
+  white-space: nowrap;
+  padding-right: 2.5vw;
+  color: darkgray;
+  text-decoration: none;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.largeHeader .menuBarItems .menuBarItem a:hover {
+  color: rgb(241, 118, 41);
+}
+.largeHeader .menuBarItems .menuBarItem a .iconSvg {
+  color: darkgray;
+  padding: 0;
+  height: 1.3rem;
+  width: 1.3rem;
 }
 
 .modal {
@@ -440,7 +491,7 @@ li {
   list-style-type: none;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
   body {
     background-image: none;
     background-color: rgb(31, 31, 31);

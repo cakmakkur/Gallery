@@ -1,4 +1,6 @@
 @import './variables';
+@import './responsive';
+
 
 .sidebar {
   background-color: rgb(40, 33, 33);
@@ -41,10 +43,11 @@
   text-decoration: none;
   text-align: center;
   transition: 0.4s;
+  &:hover {
+    color: $hover-color;
+  }
 }
-.sidebar a:hover {
-  color: $hover-color;
-}
+
 
 .sidebar.open {
   transform: translateX(0);
@@ -60,6 +63,7 @@
 }
 
 .menuButton {
+  display: none;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -70,6 +74,13 @@
   &:hover {
     cursor: pointer;
   }
+  @include S {
+    display: block;
+  }
+  @include M {
+    display: block;
+  }
+ 
 
   .burgerItem {
     @include burgerStyle;
