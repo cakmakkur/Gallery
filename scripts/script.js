@@ -6,45 +6,6 @@ import { items } from "../data/items.js";
 //   loadingScreen.style.display = 'none'
 // }, 3300);
 
-let isOpen = false;
-
-const sideBar = document.querySelector('.sidebar');
-const main = document.querySelector('.main');
-
-const menuButton = document.querySelector('.menuButton');
-const burgerItem = document.querySelector('.burgerItem');
-
-const menuItems = document.querySelectorAll('.menuItem');
-
-menuButton.addEventListener('mouseover', hoverColor);
-menuButton.addEventListener('mouseout', hoverColor);
-menuButton.addEventListener('click', toggleSidemenu);
-
-function toggleSidemenu () {
-  if (!isOpen) {
-    document.body.classList.add('no-scroll');
-    sideBar.classList.add('open');
-    main.classList.add('open');
-    burgerItem.classList.add('open');
-    menuItems.forEach((item) => {
-      item.classList.add('open');
-    })
-    isOpen = true;
-  } else {
-    document.body.classList.remove('no-scroll');
-    sideBar.classList.remove('open');
-    main.classList.remove('open');
-    burgerItem.classList.remove('open');
-    menuItems.forEach((item) => {
-      item.classList.remove('open');
-    })
-    isOpen =false;
-  }
-};
-
-function hoverColor () {
-  burgerItem.classList.toggle('outsideHover');
-};
 
 
 
@@ -93,22 +54,7 @@ items.forEach((item) => {
 document.querySelector('.productGridContainer').innerHTML = productsHTML;
 
 
-//Header Scroll Behaviour
 
-const headerBar = document.querySelector('.header');
-let prevScrollPos = window.scrollY;
-
-window.onscroll = function () {
-  let currentScrollPos = window.scrollY;
-  if (prevScrollPos > currentScrollPos) {
-    headerBar.style.top = "0";
-    menuButton.style.top = "16vh";
-  } else if (prevScrollPos > 40 && prevScrollPos < currentScrollPos) {
-    headerBar.style.top = "-16vh";
-    menuButton.style.top = "2vh"
-  }
-  prevScrollPos = currentScrollPos;
-}
 
 //Full Screen Image
 

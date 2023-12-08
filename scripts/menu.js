@@ -158,6 +158,7 @@ function changeLanguage () {
     showLanguage = 'EN';
     currentLanguage = 'de';
     renderMenus();
+    defineSidemenu();
   } else {
     home = 'Home',
     upcoming = 'Upcoming Projects',
@@ -167,6 +168,70 @@ function changeLanguage () {
     showLanguage = 'DE';
     currentLanguage = 'en';
     renderMenus();
+    defineSidemenu();
   }
 }
 
+let isOpen = false;
+
+let sideBar;
+let main;
+let burgerItem;
+let menuItems;
+
+function defineSidemenu () {
+  const menuButton = document.querySelector('.menuButton');
+
+  sideBar = document.querySelector('.sidebar');
+  main = document.querySelector('.main');
+  burgerItem = document.querySelector('.burgerItem');
+  menuItems = document.querySelectorAll('.menuItem');
+
+  menuButton.addEventListener('mouseover', hoverColor);
+  menuButton.addEventListener('mouseout', hoverColor);
+  menuButton.addEventListener('click', toggleSidemenu);
+}
+defineSidemenu();
+
+
+function toggleSidemenu () {
+  if (!isOpen) {
+    document.body.classList.add('no-scroll');
+    sideBar.classList.add('open');
+    main.classList.add('open');
+    burgerItem.classList.add('open');
+    menuItems.forEach((item) => {
+      item.classList.add('open');
+    })
+    isOpen = true;
+  } else {
+    document.body.classList.remove('no-scroll');
+    sideBar.classList.remove('open');
+    main.classList.remove('open');
+    burgerItem.classList.remove('open');
+    menuItems.forEach((item) => {
+      item.classList.remove('open');
+    })
+    isOpen =false;
+  }
+};
+
+function hoverColor () {
+  burgerItem.classList.toggle('outsideHover');
+};
+//Header Scroll Behaviour
+
+const headerBar = document.querySelector('.header');
+let prevScrollPos = window.scrollY;
+
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
+  if (prevScrollPos > currentScrollPos) {
+    headerBar.style.top = "0";
+    menuButton.style.top = "16vh";
+  } else if (prevScrollPos > 40 && prevScrollPos < currentScrollPos) {
+    headerBar.style.top = "-16vh";
+    menuButton.style.top = "2vh"
+  }
+  prevScrollPos = currentScrollPos;
+}
