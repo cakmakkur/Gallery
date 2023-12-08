@@ -29,7 +29,7 @@
   width: 100%;
   grid-template-columns: repeat(4, 1fr);
 }
-@media (max-width: 980px) {
+@media (max-width: 960px) {
   .productGridContainer {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -307,11 +307,12 @@ header {
   }
 }
 .largeHeader {
+  position: relative;
   width: 100%;
   height: 12vh;
   display: flex;
   padding-left: 1vw;
-  justify-content: space-between;
+  justify-content: end;
   align-items: end;
   border-bottom: 2px solid rgb(241, 118, 41);
 }
@@ -325,8 +326,14 @@ header {
     display: none;
   }
 }
+@media (min-width: 1100px) {
+  .largeHeader {
+    justify-content: center;
+  }
+}
 .largeHeader .largeScreenLogo {
-  width: 12vh;
+  position: absolute;
+  left: 1vw;
   height: 12vh;
   -o-object-fit: contain;
      object-fit: contain;
@@ -339,6 +346,7 @@ header {
   padding-bottom: 1vh;
 }
 .largeHeader .menuBarItems .menuBarItem a {
+  font-size: 1.1rem;
   font-weight: 300;
   white-space: nowrap;
   padding-right: 2.5vw;
@@ -348,6 +356,16 @@ header {
   display: flex;
   flex-direction: row;
   align-items: end;
+}
+@media (max-width: 960px) {
+  .largeHeader .menuBarItems .menuBarItem a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1020px) {
+  .largeHeader .menuBarItems .menuBarItem a {
+    font-size: 0.6rem;
+  }
 }
 .largeHeader .menuBarItems .menuBarItem a:hover {
   color: rgb(241, 118, 41);

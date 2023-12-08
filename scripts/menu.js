@@ -1,12 +1,25 @@
 let header = document.querySelector('.header');
 let sideMenu = document.querySelector('.insertSidemenu');
 
-let home = "Home";
-let upcoming = "Upcoming Projects";
-let events = "Events";
-let contact= "Contact";
-let about = "About";
-let showLanguage = "DE"
+let home;
+let upcoming;
+let events;
+let contact;
+let about;
+let showLanguage;
+
+let isOpen = false;
+let sideBar;
+let main;
+let burgerItem;
+let menuItems;
+
+let currentLanguage = JSON.parse(localStorage.getItem('currentLanguage'));
+if (!currentLanguage) {
+  currentLanguage = 'en';
+}
+changeLanguage();
+changeLanguage();
 
 
 function renderMenus () {
@@ -143,9 +156,6 @@ function renderMenus () {
   `
 }
 
-renderMenus();
-
-let currentLanguage = 'en';
 
 
 function changeLanguage () {
@@ -157,6 +167,7 @@ function changeLanguage () {
     about = 'Impressum'
     showLanguage = 'EN';
     currentLanguage = 'de';
+    localStorage.setItem('currentLanguage', JSON.stringify(currentLanguage));
     renderMenus();
     defineSidemenu();
   } else {
@@ -167,17 +178,12 @@ function changeLanguage () {
     about = 'About'
     showLanguage = 'DE';
     currentLanguage = 'en';
+    localStorage.setItem('currentLanguage', JSON.stringify(currentLanguage));
     renderMenus();
     defineSidemenu();
   }
 }
 
-let isOpen = false;
-
-let sideBar;
-let main;
-let burgerItem;
-let menuItems;
 
 function defineSidemenu () {
   const menuButton = document.querySelector('.menuButton');

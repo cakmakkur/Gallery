@@ -16,8 +16,23 @@
     @content;
   }
 };
+@mixin ML {
+  @media (max-width: $mid-large) {
+    @content;
+  }
+};
 @mixin L {
   @media (max-width: $large) {
+    @content;
+  }
+};
+@mixin MxL {
+  @media (max-width: $mid-large) {
+    @content;
+  }
+};
+@mixin XL {
+  @media (min-width: $x-large) {
     @content;
   }
 };
