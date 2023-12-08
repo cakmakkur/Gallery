@@ -1,5 +1,11 @@
 @import './variables';
 
+
+@mixin XS {
+  @media (max-width: $x-small) {
+    @content;
+  }
+};
 @mixin S {
   @media (max-width: $small) {
     @content;
