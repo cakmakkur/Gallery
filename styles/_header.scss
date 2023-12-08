@@ -1,4 +1,5 @@
 @import './variables';
+@import './responsive';
 
 header {
   position: fixed;
@@ -45,3 +46,19 @@ header {
       from{rotate: -110deg}
       to{rotate: -10deg}
     }
+
+.pageLogo {
+  position: fixed;
+  top: 0;
+  left: 1%;
+  width: 15vh;
+  height: 15vh;
+  object-fit: contain;
+  transition: 0.4s;
+  @include S {
+    display: none;
+  }
+  @include M {
+    display: none;
+  }
+}
