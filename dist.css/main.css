@@ -357,6 +357,11 @@ header {
   flex-direction: row;
   align-items: end;
 }
+@media (max-width: 1020px) {
+  .largeHeader .menuBarItems .menuBarItem a {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 960px) {
   .largeHeader .menuBarItems .menuBarItem a {
     font-size: 0.9rem;
