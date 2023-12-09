@@ -5,6 +5,7 @@
 @import './responsive';
 @import './fullScreenSet';
 @import './loadingScreen';
+@import './event';
 
 * {
   margin: 0px;
@@ -20,12 +21,7 @@ body {
     background-image: none;
     background-color: rgb(31, 31, 31);
   }
-  @include S {
-    background-image: none;
-    background-color: rgb(31, 31, 31);
-  }
 }
-
 .no-scroll {
   overflow: hidden;
 }

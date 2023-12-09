@@ -8,7 +8,7 @@
   transform: translateX(100vw);
 }
 
-.shopArea {
+.paintingsArea {
   position: relative;
   transition: 0.4s;
   z-index: 90;
@@ -554,6 +554,39 @@ header {
     display: white;
   }
 }
+.eventsArea {
+  position: relative;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5vh;
+}
+.eventsArea .prev-next {
+  color: white;
+  margin-bottom: 2vh;
+}
+.eventsArea .eventBox {
+  border: 1px solid rgb(115, 30, 30);
+  margin-bottom: 5vh;
+  width: 70vw;
+  height: 25vh;
+  display: grid;
+  grid-template-columns: 25vh 1fr 5vw;
+}
+.eventsArea .eventBox .eventPic {
+  border: 1px solid rgb(30, 48, 115);
+}
+.eventsArea .eventBox .eventInfo {
+  color: white;
+}
+.eventsArea .eventBox .eventLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -566,12 +599,6 @@ li {
 }
 
 @media (max-width: 700px) {
-  body {
-    background-image: none;
-    background-color: rgb(31, 31, 31);
-  }
-}
-@media (max-width: 450px) {
   body {
     background-image: none;
     background-color: rgb(31, 31, 31);
