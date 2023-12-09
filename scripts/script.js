@@ -7,8 +7,6 @@ import { items } from "../data/items.js";
 // }, 3300);
 
 
-
-
 let productsHTML = '';
 
 items.forEach((item) => {
@@ -60,6 +58,9 @@ document.querySelector('.productGridContainer').innerHTML = productsHTML;
 
 const itemImages = document.querySelectorAll('.itemImage');
 const modals = document.querySelectorAll('.modal');
+const headerBar = document.querySelector('.header');
+const menuButton = document.querySelector('.menuButton');
+
 
 let currentFullImage;
 

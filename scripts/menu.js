@@ -228,7 +228,9 @@ function hoverColor () {
 //Header Scroll Behaviour
 
 const headerBar = document.querySelector('.header');
+const menuButton = document.querySelector('.menuButton');
 let prevScrollPos = window.scrollY;
+
 
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;

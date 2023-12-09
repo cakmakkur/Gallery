@@ -423,7 +423,7 @@ header {
   position: fixed;
   top: 2vh;
   right: 2vh;
-  z-index: 250;
+  z-index: 950;
   transition: 0.4s;
 }
 .modal .xButtonWrapper:hover {
@@ -486,8 +486,8 @@ header {
   position: absolute;
   left: 100px;
   background-color: rgb(195, 202, 162);
-  animation: move2 2s linear forwards;
-  animation-delay: 3s;
+  animation: move2 1s linear forwards;
+  animation-delay: 1s;
   z-index: 1500;
 }
 .moon-part2-image {
@@ -504,8 +504,7 @@ header {
   position: absolute;
   border: none;
   top: -25px;
-  animation: move 2s linear forwards;
-  animation-delay: 1s;
+  animation: move 1s linear forwards;
   border-top-right-radius: 125px;
   border-bottom-right-radius: 125px;
   z-index: 1400;
