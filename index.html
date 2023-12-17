@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,15 +25,16 @@
         loadingScreen = document.querySelector(".loadingScreen");
         setTimeout(function () {
           loadingScreen.style.display = "none";
-        }, 2150);
+        }, 4500);
       });
+      //time: 2150 for the first animation
     </script>
   </head>
 
   <body>
     <!-- LOADING SCREEN -->
-    <div class="loadingScreen">
-      <div class="moon">
+    <!-- <div class="loadingScreen"> -->
+    <!-- <div class="moon">
         <div class="shadow"></div>
         <div class="moon-part2">
           <img
@@ -44,8 +45,17 @@
         </div>
         <p class="moon-text">Loading<span class="points">...</span></p>
         </div>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
+
+    <video
+      class="loadingScreen"
+      autoplay
+      muted
+      width="100vw"
+      height="100vh"
+      src="./assets/Logo_v1.mp4"
+    ></video>
     <!--SIDEBAR-->
     <div class="insertSidemenu"></div>
     <!-- MAIN -->
