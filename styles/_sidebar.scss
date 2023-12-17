@@ -66,7 +66,7 @@
 }
 
 .menuButton {
-  display: none;
+  // display: none;
   width: 40px;
   height: 40px;
   position: fixed;
@@ -83,6 +83,19 @@
   @include M {
     display: block;
   }
+  @include ML {
+    display: none;
+  }
+  @include L {
+    display: none;
+  }
+  @include MxL {
+    display: none;
+  }
+  @include XL {
+    display: none;
+  }
+
  
 
   .burgerItem {

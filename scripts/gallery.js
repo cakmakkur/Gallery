@@ -79,22 +79,29 @@ itemImages.forEach((image) => {
   })
 })
 
+
 window.onclick = function(event) {
   modals.forEach((modal) => {
+    const scrWidth = window.innerWidth;
     if (event.target === modal) {
       modal.style.display = "none";
       headerBar.style.display = 'flex';
-      menuButton.style.display = 'block'
+      if (scrWidth <= 700) {
+        menuButton.style.display = 'block'
+      }
     }
   }) 
 };
 
 window.onkeydown = function(event) {
   modals.forEach((modal) => {
+    const scrWidth = window.innerWidth;
     if (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27) {
       modal.style.display = "none";
       headerBar.style.display = 'flex';
-      menuButton.style.display = 'block'
+      if (scrWidth <= 700) {
+        menuButton.style.display = 'block'
+      }
     }
   }) 
 }
@@ -107,9 +114,12 @@ xButtons.forEach((button) => {
 })
 function closeFullScr () {
   modals.forEach((modal) => {
+      const scrWidth = window.innerWidth;
       modal.style.display = "none";
       headerBar.style.display = 'flex';
-      menuButton.style.display = 'block'
+      if (scrWidth <= 700) {
+        menuButton.style.display = 'block'
+      }
     }
   ) 
 }
